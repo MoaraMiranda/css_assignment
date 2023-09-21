@@ -132,3 +132,14 @@ header {
   height: 100vh;
   overflow-y: hidden;
 }
+
+/* media query */
+
+@media(max-width: 768px){
+    .bookcase-signIn-image {
+        display: none;
+    }
+    .bookcase-signUp-image{
+        display: none;
+    }
+}
