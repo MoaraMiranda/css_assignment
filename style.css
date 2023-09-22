@@ -34,7 +34,7 @@ body {
 /****** Sign In page *********/
 
 .container {
-  background-color: var(--SI-background-color);
+  background-color: var(--dark-blue-color);
   font-family: "Roboto";
   width: 100%;
   height: 100vh;
@@ -44,7 +44,7 @@ body {
 
 .login-info-wrapper {
   width: 100%;
-  color: var(--text-color-gray);
+  color: var(--light-gray-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +88,7 @@ body {
   border-radius: 0.8rem;
   border: none;
   background-color: #3882f6;
-  color: var(--text-color-gray);
+  color: var(--light-gray-color);
 }
 
 .redirect-link {
@@ -96,7 +96,7 @@ body {
   margin-top: 3.6rem;
   text-decoration: none;
   cursor: pointer;
-  color: var(--text-color-gray);
+  color: var(--light-gray-color);
 }
 
 .bookcase-signIn-image {
@@ -159,7 +159,7 @@ body {
 
 .navbar-contact a {
   text-decoration: none;
-  color: var(--text-color-gray);
+  color: var(--light-gray-color);
 }
 
 .container-contact {
@@ -222,7 +222,7 @@ textarea {
 
 .footer {
   margin-top: 30px;
-  background-color: #1f2937;
+  background-color: var(--dark-blue-color);
   height: 5rem;
   display: flex;
   justify-content: center;
@@ -230,6 +230,6 @@ textarea {
 }
 
 .footerText {
-  color: #f9faf8;
+  color: var(--light-gray-color);
   text-align: center;
 }
