@@ -65,8 +65,7 @@ header {
   border-color: #3882f6;
 }
 
-.navbar {
-  width: 400px;
+.navbar-contact {
   display: flex;
   justify-content: space-around;
   color: #e5e7eb;
@@ -74,8 +73,15 @@ header {
   align-items: center;
 }
 
-.navitem {
-  width: 50%;
+.navbar-contact ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.navbar-contact a {
+  text-decoration: none;
+  color: var(--light-gray-color);
 }
 
 .logo {
@@ -174,6 +180,49 @@ main {
   color: #f9faf8;
   text-align: center;
 }
+
+
+
+
+
+/* aboutUs page*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.img {
+  height: 500px;
+  width: 1000px;
+}
+
+.about-us {
+  padding-top: 100px;
+  font-family: "RobotoBold", "sans-serif";
+}
+
+.about {
+  font-size: larger;
+  font-family: "Roboto", "sans-serif";
+  margin-right: 15px;
+}
+
+.aboutUsbody {
+  background-color: rgb(243, 239, 239);
+}
+
+.footeraboutUs {
+  background-color: #1f2937;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* end of aboutUs page*/
+
 
 @media (max-width: 768px) {
   .headBody {
