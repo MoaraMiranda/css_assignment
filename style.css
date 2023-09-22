@@ -100,7 +100,7 @@ body {
 }
 
 .bookcase-signIn-image {
-  background-image: url(/assets/bookcase-signin.png);
+  background-image: url(./assets/bookcase-signin.png);
   background-size: cover;
   background-position: center;
   opacity: 0.6;
@@ -110,7 +110,7 @@ body {
 }
 
 .bookcase-signUp-image {
-  background-image: url(/assets/bookcase-signup.png);
+  background-image: url(./assets/bookcase-signup.png);
   background-size: cover;
   background-position: center;
   opacity: 0.6;
