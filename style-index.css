@@ -41,8 +41,12 @@ header {
 
 .headBody {
   display: flex;
-  margin-top: 50px;
   padding-bottom: 50px;
+  font-family: "Roboto", "sans-serif";
+  background-color: #1f2937;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
 }
 
 .part2Body {
@@ -132,6 +136,19 @@ main {
   border-style: solid;
   border-color: #3882f6;
   border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.cardImg {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10px;
+}
+
+figcaption {
+  font-family: "Roboto", "sans-serif";
+  text-align: center;
 }
 
 .quote {
@@ -143,7 +160,7 @@ main {
 
 .quoteText {
   font-family: "RobotoLight", "sans-serif";
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #1f2937;
   text-align: center;
   padding: 20px;

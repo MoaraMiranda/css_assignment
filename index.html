@@ -9,19 +9,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="head">
-            <h1 class="logo">Kreativstorm Library</h1>
-            <nav class="navbar-contact">
-                <ul>
-                    <li><a href="#" class="navitem">Home</a></li>
-                    <li><a href="./pages/aboutUs.html" class="navitem">About Us</a></li>
-                    <li><a href="./pages/contact.html" class="navitem">Contact</a></li>
-                    <li><a href="./pages/signIn.html" class="navitem">Sign In</a></li>
-                </ul>
-            </nav>
+    <header class="head">
+        <h1 class="logo">Kreativstorm Library</h1>
+        <nav class="navbar-contact">
+            <ul>
+                <li><a href="#" class="navitem">Home</a></li>
+                <li><a href="./pages/aboutUs.html" class="navitem">About Us</a></li>
+                <li><a href="./pages/contact.html" class="navitem">Contact</a></li>
+                <li><a href="./pages/signIn.html" class="navitem">Sign In</a></li>
+            </ul>
+        </nav>
         </div>
-        <div class="headBody">
+
+    </header>
+
+    <main>
+
+        <section class="headBody">
             <div class="part1Body">
                 <h1 class="headBodyHeader">This website is awasome</h1>
                 <p class="pBody">this website has some subtext</p>
@@ -30,24 +34,34 @@
             <div class="part2Body">
                 <img class="imgBody" src="https://miro.medium.com/v2/resize:fit:5120/1*42ebJizcUtZBNIZPmmMZ5Q.jpeg">
             </div>
-        </div>
-    </header>
+        </section>
 
-    <main>
         <h1 class="bodytext">Interesting information</h1>
         <section class="cards">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <figure class="card">
+                <img class="cardImg" src="./assets/book1.png">
+                <figcaption>The last thing he told me</figcaption>
+            </figure>
+            <figure class="card">
+                <img class="cardImg" src="./assets/book2.png">
+                <figcaption> Where the crawding sing</figcaption>
+            </figure>
+            <figure class="card">
+                <img class="cardImg" src="./assets/book3.png">
+                <figcaption> Atomic habit</figcaption>
+            </figure>
+            <figure class="card">
+                <img class="cardImg" src="./assets/book4.png">
+                <figcaption>I am glad my mom died</figcaption>
+            </figure>
         </section>
 
         <section class="quote">
-            <p class="quoteText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <quote class="quoteText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                in culpa qui officia deserunt mollit anim id est laborum.</p>
+                in culpa qui officia deserunt mollit anim id est laborum.</quote>
             <h3 class="writer">-Thor</h3>
         </section>
 
@@ -55,11 +69,8 @@
             <div class="part1action">
                 <h2 class="actionHeader">Call to action!its time</h2>
                 <p class="paction">this website has some subtext</p>
-
             </div>
-            <div class="part2action">
-                <a href="./pages/signUp.html"><button class="signUp2">Sign Up</button></a>
-            </div>
+            <a href="./pages/signUp.html"><button class="signUp2">Sign Up</button></a>
         </section>
 
 
