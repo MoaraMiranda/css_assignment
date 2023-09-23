@@ -25,6 +25,10 @@ header {
   margin: 0;
 }
 
+:root {
+  --dark-blue-color: #1f2937;
+  --light-gray-color: #e5e7eb;
+}
 
 /*  header*/
 
@@ -47,12 +51,14 @@ header {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 5%;
+  justify-content: space-between;
 }
 
 .part2Body {
   width: 30%;
   height: auto;
   margin-left: 10%;
+
 }
 
 .imgBody {
@@ -82,7 +88,7 @@ header {
   border-color: #3882f6;
 }
 
-.navbar-contact {
+.navbar {
   display: flex;
   justify-content: space-around;
   color: #e5e7eb;
@@ -90,13 +96,13 @@ header {
   align-items: center;
 }
 
-.navbar-contact ul {
+.navbar ul {
   list-style: none;
   display: flex;
   gap: 60px;
 }
 
-.navbar-contact a {
+.navbar a {
   text-decoration: none;
   color: var(--light-gray-color);
 }
