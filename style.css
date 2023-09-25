@@ -20,210 +20,66 @@ body {
   src: url(fonts/Roboto-Regular.ttf);
 }
 
-/****** Header (needs to merge) *********/
-.head {
-  padding: 10px 10px 20px 10px;
+@font-face {
+  font-family: "RobotoBold";
+  src: url(fonts/Roboto-Bold.ttf);
 }
 
-/****** Footer (needs to merge) *********/
-.footerText {
-  font-family: "Roboto";
-  font-size: 14px;
+@font-face {
+  font-family: "RobotoLight";
+  src: url(fonts/Roboto-LightItalic.ttf);
 }
-
-/****** Sign In page *********/
 
 .container {
-  background-color: var(--dark-blue-color);
-  font-family: "Roboto";
+  width: 90rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.full-bleed-dark {
+  box-shadow: 0 0 0 100vmax var(--dark-blue-color);
+  clip-path: inset(0 -100vmax);
+}
+
+.full-bleed-light {
+  box-shadow: 0 0 0 100vmax var(--light-gray-color);
+  clip-path: inset(0 -100vmax);
+}
+
+/*********** header***********/
+
+header {
   width: 100%;
-  height: 100vh;
+  font-family: "Roboto", "sans-serif";
+  background-color: #1f2937;
   display: flex;
   justify-content: space-between;
+  padding: 2rem 0;
 }
 
-.back-link {
-  text-decoration: none;
-  color: var(--light-gray-color);
-  font-size: 1.2rem;
-  opacity: 0.7;
-}
-
-.login-info-wrapper {
-  width: 100%;
-  color: var(--light-gray-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4.8rem;
-}
-.head-sign-content h1 {
-  font-size: 4.8rem;
-}
-
-.head-sign-content p {
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-.sign-text {
+.logo {
   font-size: 2.4rem;
-  font-weight: 500;
+  color: #f9faf8;
 }
 
-.input-wrapper {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-
-.input-wrapper input {
-  height: 4.8rem;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.8rem;
-  border: none;
-  background-color: #e5e7eb;
-}
-
-.input-wrapper button {
-  padding: 1.2rem;
-  font-size: 1.8rem;
-  border-radius: 0.8rem;
-  border: none;
-  background-color: #3882f6;
-  color: var(--light-gray-color);
-}
-
-.redirect-link {
-  font-size: 1.8rem;
-  margin-top: 3.6rem;
-  text-decoration: none;
-  cursor: pointer;
-  color: var(--light-gray-color);
-}
-
-.bookcase-signIn-image {
-  background-image: url(./assets/bookcase-signin.png);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-  width: 100%;
-  height: 100vh;
-  overflow-y: hidden;
-}
-
-.bookcase-signUp-image {
-  background-image: url(./assets/bookcase-signup.png);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.6;
-  width: 100%;
-  height: 100vh;
-  overflow-y: hidden;
-}
-
-/* media query */
-
-@media (max-width: 768px) {
-  .bookcase-signIn-image {
-    display: none;
-  }
-  .bookcase-signUp-image {
-    display: none;
-  }
-}
-
-/********************* Contact Page ******************************/
-
-.contact-page {
-  display: flex;
-  flex-direction: column;
-}
-.contact-page main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar-contact {
+.navbar {
   display: flex;
   justify-content: space-around;
   color: #e5e7eb;
-  font-size: 18px;
+  font-size: 1.8rem;
   align-items: center;
 }
 
-.navbar-contact ul {
+.navbar ul {
   list-style: none;
   display: flex;
-  gap: 60px;
+  gap: 6rem;
 }
 
-.navbar-contact a {
+.navbar a {
   text-decoration: none;
   color: var(--light-gray-color);
 }
-
-.container-contact {
-  width: 350px;
-  color: var(--dark-blue-color);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 20px;
-  gap: 20px;
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.container-contact h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.container-contact p {
-  font-size: 18px;
-}
-.contact-input-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 18px;
-}
-
-.contact-input-wrapper input {
-  height: 48px;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 8px;
-  border: none;
-  background-color: var(--light-gray-color);
-}
-
-.contact-input-wrapper button {
-  padding: 12px;
-  font-size: 18px;
-  border-radius: 8px;
-  border: none;
-  background-color: #3882f6;
-  color: var(--light-gray-color);
-}
-
-textarea {
-  background-color: var(--light-gray-color);
-  border: none;
-  border-radius: 8px;
-  padding: 10px;
-}
-
 /* footer*/
 
 .footer {
@@ -236,6 +92,40 @@ textarea {
 }
 
 .footerText {
-  color: var(--light-gray-color);
+  font-family: "Roboto";
+  font-size: 14px;
   text-align: center;
+  color: var(--light-gray-color);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 490px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    text-align: center;
+    font-size: 3.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .navbar {
+    padding: 0 2rem;
+    border: 1px solid #fffafa09;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    gap: 4.5rem;
+  }
 }

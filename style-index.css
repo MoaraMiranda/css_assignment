@@ -13,93 +13,65 @@
   src: url(fonts/Roboto-LightItalic.ttf);
 }
 
-header {
-  font-family: "Roboto", "sans-serif";
-  background-color: #1f2937;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 1%;
-}
-
 * {
   margin: 0;
+  padding: 0;
 }
 
 :root {
   --dark-blue-color: #1f2937;
   --light-gray-color: #e5e7eb;
+  font-size: 62.5%;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 90rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.full-bleed-dark {
+  box-shadow: 0 0 0 100vmax var(--dark-blue-color);
+  clip-path: inset(0 -100vmax);
+}
+
+.full-bleed-light {
+  box-shadow: 0 0 0 100vmax var(--light-gray-color);
+  clip-path: inset(0 -100vmax);
+}
 /*  header*/
 
-.head {
-  display: flex;
-  justify-content: space-between;
-}
-
-.headAbout {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-}
-
-.headBody {
-  display: flex;
-  padding-bottom: 50px;
+header {
+  width: 100%;
   font-family: "Roboto", "sans-serif";
   background-color: #1f2937;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 5%;
+  display: flex;
   justify-content: space-between;
+  padding: 2rem 0;
 }
 
-.part2Body {
-  width: 30%;
-  height: auto;
-  margin-left: 10%;
-
-}
-
-.imgBody {
-  width: 100%;
-  height: auto;
-}
-
-.headBodyHeader {
-  font-size: 48px;
+.logo {
+  font-size: 2.4rem;
   color: #f9faf8;
-  font-family: "RobotoBold", "sans-serif";
-  margin-bottom: 10px;
-}
-
-.pBody {
-  font-size: 18px;
-  color: #e5e7eb;
-  margin-bottom: 10px;
-}
-
-.signUp {
-  background-color: #3882f6;
-  border-radius: 5px;
-  color: #e5e7eb;
-  width: 6rem;
-  height: 2rem;
-  border-color: #3882f6;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
   color: #e5e7eb;
-  font-size: 18px;
+  font-size: 1.8rem;
   align-items: center;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 60px;
+  gap: 6rem;
 }
 
 .navbar a {
@@ -107,23 +79,70 @@ header {
   color: var(--light-gray-color);
 }
 
-.logo {
-  font-size: 24px;
-  color: #f9faf8;
-}
-
 /*  end of header*/
 
-/*  main body*/
+/*  main */
 
 main {
   font-family: "Roboto", "sans-serif";
 }
 
+/***** section 1 *****/
+.headBody {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", "sans-serif";
+  background-color: #1f2937;
+  padding: 50px 0;
+  gap: 3rem;
+}
+
+.part1Body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.headBodyHeader {
+  font-size: 4.8rem;
+  color: #f9faf8;
+  font-family: "RobotoBold", "sans-serif";
+}
+
+.pBody {
+  font-size: 1.8rem;
+  color: #e5e7eb;
+  margin: 2rem 0;
+}
+
+.signUp {
+  background-color: #3882f6;
+  border-radius: 0.5rem;
+  color: #e5e7eb;
+  padding: 1.2rem 3rem;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.imgBody {
+  width: 45rem;
+  height: auto;
+}
+
+/************** section 2 **************/
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
 .bodytext {
-  margin-top: 30px;
   text-align: center;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: #1f2937;
   font-weight: bolder;
 }
@@ -131,62 +150,60 @@ main {
 .cards {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  gap: 3rem;
 }
-
 .card {
-  margin-left: 70px;
-  width: 7rem;
-  height: 7rem;
-  background-color: gray;
-  border-style: solid;
-  border-color: #3882f6;
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  width: 10rem;
+  height: 15rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
 }
 
 .cardImg {
-  width: 7rem;
-  height: 7rem;
+  width: 10rem;
+  height: 15rem;
   border-radius: 10px;
 }
 
 figcaption {
   font-family: "Roboto", "sans-serif";
   text-align: center;
+  color: #1f2937;
+  font-size: 1.3rem;
 }
 
+/*************Section 3 *************/
+
 .quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
   background-color: #e5e7eb;
-  margin-top: 30px;
-  width: 100%;
-  height: 100%;
+  padding: 7rem 3rem;
 }
 
 .quoteText {
   font-family: "RobotoLight", "sans-serif";
-  font-size: 2.25rem;
+  font-size: 3.6rem;
   color: #1f2937;
   text-align: center;
-  padding: 20px;
 }
 
 .writer {
   text-align: end;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
+/*************Section 4 *************/
+
 .action {
-  margin-top: 30px;
+  margin-top: 5rem;
   text-align: center;
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 10rem;
   display: flex;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #3882f6;
   justify-content: space-around;
   border-radius: 8px;
@@ -196,19 +213,17 @@ figcaption {
 
 .part1action {
   padding: 20px;
+  font-size: 1.8rem;
 }
 
 .signUp2 {
-  background-color: #3882f6;
-  border-style: solid;
+  background-color: #e5e7eb;
   border-radius: 5px;
-  color: #e5e7eb;
-  width: 6rem;
-  height: 2rem;
-  border-color: #e5e7eb;
-  margin-left: 8rem;
+  border: none;
+  color: #3882f6;
+  padding: 1rem 2rem;
+  cursor: pointer;
 }
-
 /*end of main body*/
 
 /* footer*/
@@ -225,15 +240,17 @@ figcaption {
 .footerText {
   color: #f9faf8;
   text-align: center;
+  font-size: 1.5rem;
 }
 
-
-
-
-
 /* aboutUs page*/
+.headAbout {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
 
-.container {
+.container-about {
   display: flex;
   justify-content: center;
   background-color: white;
@@ -253,7 +270,6 @@ figcaption {
   font-size: larger;
   font-family: "Roboto", "sans-serif";
   margin-right: 15px;
-
 }
 
 .aboutUsbody {
@@ -270,11 +286,27 @@ figcaption {
 
 /* end of aboutUs page*/
 
-
 @media (max-width: 768px) {
+  .container {
+    width: 60rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    font-size: 1.2rem;
+  }
+
   .headBody {
     flex-direction: column;
+    gap: 5rem;
     /* Reverse the order of items */
+  }
+
+  .part1Body {
+    text-align: center;
   }
 
   .part2Body {
@@ -284,33 +316,79 @@ figcaption {
   }
 
   .imgBody {
-    margin-top: 20px;
+    width: 100%;
+    height: auto;
   }
 
   .cards {
     flex-direction: column;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 6rem;
   }
 
-  .card {
-    margin-left: 0px;
-    margin-top: 50px;
-  }
-
-  .container {
+  .container-about {
     flex-direction: column;
   }
 
   .about {
     margin-top: 10px;
   }
+}
 
-  .action {
+@media (max-width: 490px) {
+  .container {
+    width: 35rem;
+  }
+  header {
+    display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
+  }
+  .logo {
+    text-align: center;
+    font-size: 3.4rem;
+    padding-bottom: 2rem;
   }
 
+  .navbar {
+    padding: 0 2rem;
+    border: 1px solid #fffafa09;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    gap: 4.5rem;
+  }
+
+  .headBody {
+    padding: 2rem 1rem;
+  }
+
+  .cardsSection {
+    gap: 4rem;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .quote {
+    height: 36rem;
+    background-color: #e5e7eb;
+    padding: 4rem 3rem;
+  }
+  .action {
+    margin-top: 2rem;
+    height: 16rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .part1action {
+    padding: 10px;
+    font-size: 1.8rem;
+  }
   .signUp2 {
-    margin-left: 0rem;
+    margin: 1rem;
+    padding: 1.5rem 2.5rem;
   }
 }

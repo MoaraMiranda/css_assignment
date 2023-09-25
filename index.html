@@ -9,75 +9,78 @@
 </head>
 
 <body>
-    <header class="head">
-        <h1 class="logo">Kreativstorm Library</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#" class="navitem">Home</a></li>
-                <li><a href="./pages/aboutUs.html" class="navitem">About Us</a></li>
-                <li><a href="./pages/contact.html" class="navitem">Contact</a></li>
-                <li><a href="./pages/signIn.html" class="navitem">Sign In</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header class="full-bleed-dark">
+            <h1 class="logo">Kreativstorm Library</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./pages/aboutUs.html">About Us</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="./pages/signIn.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
+        <main>
+            <section class="headBody full-bleed-dark">
+                <div class="part1Body">
+                    <h1 class="headBodyHeader">Beyond imagination!</h1>
+                    <p class="pBody">Unleash the Magic of Reading at your Fingertips! Discover a world of knowledge,
+                        adventure, and inspiration, all just a click away.
+                    </p>
+                    <a href="./pages/signUp.html"><button class="signUp">Sign Up</button></a>
+                </div>
+                <picture class="part2Body">
+                    <img class="imgBody" src="https://miro.medium.com/v2/resize:fit:5120/1*42ebJizcUtZBNIZPmmMZ5Q.jpeg">
+                </picture>
+            </section>
 
-        <section class="headBody">
-            <div class="part1Body">
-                <h1 class="headBodyHeader">This website is awasome</h1>
-                <p class="pBody">this website has some subtext</p>
-                <a href="./pages/signUp.html"><button class="signUp">Sign Up</button></a>
+            <section class="cardsSection">
+                <h2 class="bodytext">Best books of September</h2>
+                <div class="cards">
+                    <figure class="card">
+                        <img class="cardImg" src="./assets/book1.png">
+                        <figcaption>The last thing he told me</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img class="cardImg" src="./assets/book2.png">
+                        <figcaption> Where the crawdads sing</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img class="cardImg" src="./assets/book3.png">
+                        <figcaption> Atomic habits</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img class="cardImg" src="./assets/book4.png">
+                        <figcaption>I am glad my mom died</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="quote full-bleed-light">
+                <q class="quoteText">
+                    How wonderful it is that nobody need wait a single moment before starting to improve the world.
+                </q>
+                <h3 class="writer">Anne Frank</h3>
+            </section>
+
+            <section class="action">
+                <div class="part1action">
+                    <h2 class="actionHeader">The Most Book Deals Ever!</h2>
+                    <p class="paction">Sign up to enjoy the best deals.</p>
+                </div>
+                <a href="./pages/signUp.html"><button class="signUp2">Sign Up</button></a>
+            </section>
+
+
+        </main>
+        <footer>
+            <div class="footer full-bleed-dark">
+                <p class="footerText">Copyright ©</p>
             </div>
-            <picture class="part2Body">
-                <img class="imgBody" src="https://miro.medium.com/v2/resize:fit:5120/1*42ebJizcUtZBNIZPmmMZ5Q.jpeg">
-            </picture>
-        </section>
-
-        <h1 class="bodytext">Interesting information</h1>
-        <section class="cards">
-            <figure class="card">
-                <img class="cardImg" src="./assets/book1.png">
-                <figcaption>The last thing he told me</figcaption>
-            </figure>
-            <figure class="card">
-                <img class="cardImg" src="./assets/book2.png">
-                <figcaption> Where the crawding sing</figcaption>
-            </figure>
-            <figure class="card">
-                <img class="cardImg" src="./assets/book3.png">
-                <figcaption> Atomic habit</figcaption>
-            </figure>
-            <figure class="card">
-                <img class="cardImg" src="./assets/book4.png">
-                <figcaption>I am glad my mom died</figcaption>
-            </figure>
-        </section>
-
-        <section class="quote">
-            <quote class="quoteText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                in culpa qui officia deserunt mollit anim id est laborum.</quote>
-            <h3 class="writer">-Thor</h3>
-        </section>
-
-        <section class="action">
-            <div class="part1action">
-                <h2 class="actionHeader">Call to action!its time</h2>
-                <p class="paction">this website has some subtext</p>
-            </div>
-            <a href="./pages/signUp.html"><button class="signUp2">Sign Up</button></a>
-        </section>
-
-
-    </main>
-    <footer>
-        <div class="footer">
-            <p class="footerText">Copyright ©</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
