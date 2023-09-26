@@ -259,10 +259,12 @@ figcaption {
 .img {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-us {
-  padding-top: 100px;
+  padding-top: 130px;
   font-family: "RobotoBold", "sans-serif";
 }
 
@@ -270,6 +272,8 @@ figcaption {
   font-size: larger;
   font-family: "Roboto", "sans-serif";
   margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .aboutUsbody {
