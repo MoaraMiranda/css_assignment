@@ -249,6 +249,8 @@ figcaption {
 .img {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-us {
