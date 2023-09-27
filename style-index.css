@@ -33,6 +33,7 @@ body {
   width: 90rem;
   height: 100%;
   margin: 0 auto;
+   position: relative;
 }
 
 .full-bleed-dark {
@@ -244,17 +245,6 @@ figcaption {
 }
 
 /* aboutUs page*/
-.headAbout {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-}
-
-.container-about {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-}
 
 .img {
   width: 100%;
@@ -262,26 +252,52 @@ figcaption {
 }
 
 .about-us {
-  padding-top: 100px;
+  margin: 3rem auto;
   font-family: "RobotoBold", "sans-serif";
 }
 
-.about {
-  font-size: larger;
+.about-us h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--dark-blue-color);
+}
+
+.about-us p {
+  font-size: 1.8rem;
   font-family: "Roboto", "sans-serif";
-  margin-right: 15px;
+  margin-bottom: 2rem;
+  line-height: 2.4rem;
+  text-align: justify;
+  color: var(--dark-blue-color);
 }
-
-.aboutUsbody {
-  background-color: rgb(243, 239, 239);
-}
-
-.footeraboutUs {
-  background-color: #1f2937;
-  height: 5rem;
+.social-media-about {
+  background-color: var(--dark-blue-color);
+  margin-top: 4rem;
+  border-radius: 0.8rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 3rem;
+}
+
+.social-media-about h3 {
+  font-size: 1.8rem;
+  color: var(--light-gray-color);
+  font-weight: 400;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.social-media-about img {
+  width: 5rem;
+  height: auto;
 }
 
 /* end of aboutUs page*/
